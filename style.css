@@ -59,10 +59,6 @@ h2 {
     color: #1A5C38;
 }
 
-h2#sub {
-
-}
-
 nav {
     text-align: left;
 }
@@ -88,7 +84,14 @@ footer {
 }
 
 article {
+    text-align: center;
     margin: 0px 200px;
     padding: 20px;
     background-color: #d3c9c9;
+}
+
+section#video {
+    background-color: #1A5C38;
+    margin: 0px 0px;
+    padding: 0px;
 }
