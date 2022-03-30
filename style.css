@@ -92,6 +92,17 @@ article {
 
 section#video {
     background-color: #1A5C38;
-    margin: 0px 0px;
-    padding: 0px;
+    margin: 0px 200px;
+    padding: 20px;
+}
+
+div#list {
+    background-color: #84e1ad;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+li {
+    text-align: left;
 }
