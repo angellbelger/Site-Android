@@ -1,5 +1,67 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "park";
+    src: url(fonts/park.ttf);
+}
+
+@font-face {
+    font-family: "android";
+    src: url(fonts/idroid.otf);
+}
+
+:root {
+    --colour00: #c8e2d4;
+
+    --colour01: #80E1AE;
+    
+    --colour02: #3BDC87;
+
+    --colour03: #2DA867;
+    
+    --colour04: #195C38;
+    
+    --colour05: #264435;
+
+    --font-padrao: Arial, Verdana, Helvetica, Sans-serif;
+
+    --font-destaque: "park", "Cursive";
+
+    --font-android: "android", "Cursive";
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    background-color: #80E1AE;
+    font-family: var(--font-padrao);
+    background-color: var(--colour01);
+}
+
+header {
+    background-color: var(--colour04);
+}
+
+header > h1 {
+    font-family: var(--font-destaque);
+    color: var(--colour00);
+}
+
+main {
+    background-color: var(--colour00);
+}
+
+main h1 {
+    font-family: var(--font-android);
+}
+
+main h2 {
+    font-family: var(--font-android);
+}
+
+footer {
+    background-color: var(--colour05);
+    color: var(--colour00);
 }
