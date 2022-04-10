@@ -66,6 +66,10 @@ main h2 {
     font-family: var(--font-android);
 }
 
+img {
+    width: 100%;
+}
+
 footer {
     background-color: var(--colour05);
     color: var(--colour00);
