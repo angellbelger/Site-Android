@@ -58,6 +58,7 @@ header > h1 {
 }
 
 header > p {
+    text-align: center;
     font-size: 1.2em;
     font-family: var(--font-padrao);
     color: var(--colour00);
@@ -88,6 +89,10 @@ nav > a:hover {
     border-radius: 5px;
 }
 
+a.external::after {
+    content: '\00A0\1F517'
+}
+
 main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.664);
     background-color: var(--colour00);
@@ -99,6 +104,13 @@ main {
     margin-bottom: 10px;
 }
 
+main p {
+    text-align: justify;
+    text-indent: 30px;
+    margin: 20px 0px 20px 0px;
+    line-height: 1.5em;
+}
+
 main img {
     width: 100%;
 
@@ -106,19 +118,76 @@ main img {
 
 main img.small {
     display: block;
-    width: 50%;
+    width: 300px;
     margin: auto;
+}
+
+main strong {
+    color: var(--colour05);
+}
+
+main a {
+    text-decoration: none;
+    background-color: var(--colour02);
+    color: var(--colour04);
+    padding: 2px 3px 2px 3px;
+}
+
+main a:hover {
+    color: var(--colour03);
+    text-decoration: underline
 }
 
 main h1 {
     font-family: var(--font-android);
+    color: var(--colour05);
 }
 
 main h2 {
     font-family: var(--font-android);
+    font-size: 1.3em;
+    color: var(--colour05);
+    background-image: linear-gradient(to right, var(--colour02), transparent);
+    text-indent: 5px;
+
+}
+
+aside {
+    background-color: var(--colour01);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px #00000073;
+}
+
+aside > h3 {
+    background-color: var(--colour05);
+    color: var(--colour00);
+    padding: 10px;
+    margin: -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
 }
 
 footer {
     background-color: var(--colour05);
     color: var(--colour00);
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--colour00);
+}
+
+footer a:hover {
+    color: var(--colour02);
+    text-decoration: underline;
 }
