@@ -41,20 +41,66 @@ body {
 }
 
 header {
-    background-color: var(--colour04);
+    min-height: 150px;
+    padding-top: 40px;
+    background-image: linear-gradient(to bottom, var(--colour03), var(--colour05));
+    text-align: center;
 }
 
 header > h1 {
+    font-size: 3em;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.795);
     font-family: var(--font-destaque);
+    margin-bottom: 20px;
     color: var(--colour00);
 }
 
+header > p {
+    font-size: 1.2em;
+    font-family: var(--font-padrao);
+    color: var(--colour00);
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 0px 0px 10px black;
+}
+
+nav {
+    background-color: var(--colour05);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.479);
+}
+
+nav > a {
+    color: var(--colour00);
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    color: var(--colour02);
+    background-color: var(--colour04);
+}
+
 main {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.664);
     background-color: var(--colour00);
     min-width: 300px;
     max-width: 800px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+main img {
+    width: 100%;
+
+}
+
+main img.small {
+    display: block;
+    width: 50%;
     margin: auto;
 }
 
@@ -64,10 +110,6 @@ main h1 {
 
 main h2 {
     font-family: var(--font-android);
-}
-
-img {
-    width: 100%;
 }
 
 footer {
