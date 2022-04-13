@@ -11,7 +11,7 @@
 }
 
 :root {
-    --colour00: #c8e2d4;
+    --colour00: #dddddd;
 
     --colour01: #80E1AE;
     
@@ -67,6 +67,7 @@ header > p {
     text-shadow: 0px 0px 10px black;
     padding-left: 5px;
     padding-right: 10px;
+    padding-bottom: 20px;
 }
 
 nav {
@@ -76,7 +77,7 @@ nav {
 }
 
 nav > a {
-    color: var(--colour00);
+    color: var(--colour01);
     font-weight: bold;
     padding: 10px;
     text-decoration: none;
@@ -140,16 +141,35 @@ main a:hover {
 
 main h1 {
     font-family: var(--font-android);
+    font-size: 1.6em;
+    font-weight: normal;
     color: var(--colour05);
 }
 
 main h2 {
     font-family: var(--font-android);
     font-size: 1.3em;
+    font-weight: normal;
     color: var(--colour05);
     background-image: linear-gradient(to right, var(--colour02), transparent);
     text-indent: 5px;
 
+}
+
+div.video {
+    background-color: var(--colour05);
+    margin: 30px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%
 }
 
 aside {
