@@ -64,7 +64,7 @@ header > p {
     color: var(--colour00);
     max-width: 500px;
     margin: auto;
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 10px #000000;
     padding-left: 5px;
     padding-right: 10px;
     padding-bottom: 20px;
@@ -73,7 +73,7 @@ header > p {
 nav {
     background-color: var(--colour05);
     padding: 10px;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.479);
+    box-shadow: 0px 7px 7px #0000007a;
 }
 
 nav > a {
